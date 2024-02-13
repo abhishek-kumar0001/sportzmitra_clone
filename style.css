@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, "Segoe UI";
+    font-size: 16px;
+    overflow-x: hidden;
+}
+nav{
+    position: sticky;
+    top: 0;
+}
+.navigation{
+    height: 2.5rem;
+    width: 100vw;
+    background-color: #4fab00;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 8rem;
+}
+
+.navigation>img{
+    width: 1.2rem;
+}
+.navigation>p{
+    color: #fff;
+    font-weight: 600;
+}
+
+.nav_header{
+    background-color: #fff;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 8.5rem;
+}
+.nav_header img{
+    width: 10rem;
+}
+.nav_header>div{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 15px;
+    
+}
+ul li{
+    list-style-type: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: gray;
+    cursor: pointer;
+}
+ul li:hover{
+    color: #4fab00;
+}
+.btn_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn_container button{
+    padding: 10px 20px;
+    background-color: #4fab00;
+    color: #fff;
+    border-style: none;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #e11962;
+    color: #4fab00;
+}
+
+/* hero section */
+
+.hero_section_image img{
+    height: 70vh;
+    width: 100vw;
+}
+.about_section{
+    padding-inline: 8rem;
+    padding-block: 3rem;
+}
+.heading{
+    font-size: 2rem;
+}
+hr{
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: #4fab00;
+    margin-top: 10px;
+}
+.about_section p{
+    margin-block: 1.5rem;
+}
+.about_image_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-block: 2rem;
+}
+.about_image_section img{
+    width:40vw;
+}
+.about_image_section h2{
+    font-size: 1.6rem;
+    color: gray;
+}
+.about_image_section .right_section i{
+    color: #4fab00;
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+.features_section{
+    width: 100vw;
+    padding-inline: 8rem;
+    padding-block: 3rem;
+    
+}
+
+.features_section>p{
+    margin: 1.5rem 0;
+}
+
+.features_cart_container{
+    margin-block: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.features_cart{
+    display: flex;
+    flex-direction: column;
+} 
+.features_cart>i{
+    font-size: 2.5rem;
+    color: #4fab00;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.features_cart>h3>a{
+    text-decoration: none;
+    text-align: left;
+    border-bottom: 1px solid gray;
+    color: gray;
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
+    
+}
+.features_cart>hr{
+    width: 2.5rem;
+    height: 0.2rem;
+    background-color: #4fab00;
+    margin-top: 10px;
+}
+.features_cart>p{
+    margin-top: 10px;
+}
+
+.products_section{
+    padding-inline: 8rem;
+    padding-block: 3rem;
+}
+
+.products_cart_container{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.products_cart{
+    width: 280px;
+    height: 400px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+}
+.products_cart:hover {
+    background-color:#4fab00;
+    transition-delay: 0.3s;
+    transition: all 0.5s ease-in-out;
+}
+.products_cart:hover a{
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.products_cart img{
+    width: 11rem;
+}
+.products_cart a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #000000;
+    border-bottom-style: solid;
+}
+section a:hover{
+    color: #65c9cd;
+}
+
+.license_section{
+    padding-inline: 8rem;
+    padding-block: 3rem;
+}
+.license_section>p{
+    margin: 1.5rem 0;
+}
+
+.license_cart_container{
+    margin-block: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.license_cart_free{
+    width: 250px;
+    height: 350px;
+    position: relative;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+    
+}
+.free{
+    height: 3rem;
+    width: 100%;
+    background-color: #f8f8f8;
+    color: #777777;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+}
+.license_cart_container h3{
+    display: inline;
+    color: #4fab00;
+    font-size: 1.5rem;
+    padding: 10px;
+    
+    
+}
+sub{
+    border-bottom: 2px solid #4fab00;
+    font-size: 2rem;
+}
+span{
+    color: gray;
+    font-size: 1rem;
+    opacity: 0.5;
+}
+.free_buttom_box{
+    height: 2rem;
+    width: 100%;
+    background-color: #f8f8f8;
+    position: absolute;
+    bottom:0;
+}
+.para_container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+.para_container p{
+    text-align: center;
+}
+.strike{
+    color: gray;
+}
+
+.license_cart_plan{
+    width: 250px;
+    height: 350px;
+    position: relative;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+}
+.plan{
+    height: 3rem;
+    width: 100%;
+    background-color:#4fab00;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.plan_buttom_box{
+    height: 4rem;
+    width: 100%;
+    background-color: #f8f8f8;
+    position: absolute;
+    bottom:0;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.plan_buttom_box button{
+    padding: 10px 20px;
+    background-color: #4fab00;
+    border: none;
+    border-radius: 8px;
+}
+button:hover{
+    background-color: #65c9cd;
+}
+button a{
+    color: #fff;
+}
+
+.license_cart_ultimate{
+    width: 250px;
+    height: 350px;
+    position: relative;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+}
+.ultimate{
+    height: 3rem;
+    width: 100%;
+    background-color: #f8f8f8;
+    color: gray;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.license_cart_free,
+.license_cart_plan,
+.license_cart_ultimate{
+    z-index: -1;
+}
+
+.contact_section{
+    padding-inline: 8rem;
+    padding-block: 3rem;
+}
+.address_container{
+    margin-block: 5rem;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+}
+.address_container h2,.email_call_container h2{
+    color: gray;
+    font-size: 1.5rem;
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    
+}
+.location i{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    color: #4fab00;
+    background-color: #fff;
+    border: 2px dotted #65c9cd;
+    border-radius: 50%;
+}
+.location div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.email_call_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+.email_cart{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+}
+.call_cart{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+}
+.email_call_container i{
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    color: #4fab00;
+    background-color: #fff;
+    border: 2px dotted #65c9cd;
+    border-radius: 50%;
+}
+.email_cart div,.call_cart div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 8rem;
+}
+
+.copyright{
+    height: 100px;
+    width: 100%;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright p{
+    opacity: 0.8;
+}
+
